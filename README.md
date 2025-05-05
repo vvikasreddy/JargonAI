@@ -1,7 +1,25 @@
 # JargonAI
- 
-- The Corpus_all.csv file contains 60 written summaries for legal documents.
-- Place this csv file in the runtime directory of the Colab notebook (summa_rizzer.ipynb).
-- Use the "Run on Colab" hyperlink in the notebook to execute the script instantly.
-- Enable GPU for improved performance.
-- We used the Nvidia A100 GPU. In case of CUDA memory overflow for your GPU, try lowering the batch size.
+
+**JargonAI** is a lightweight, end-to-end summarization pipeline for legal documents, built on Hugging Face’s FLAN-T5 model. It demonstrates data loading, preprocessing, model fine-tuning, and evaluation—all within a Colab-ready notebook.
+
+## Features
+
+- **Custom Legal Dataset**  
+  Contains 60 human-written summaries of legal texts in `Corpus_all.csv` :contentReference[oaicite:0]{index=0}.
+- **Pretrained Model**  
+  Fine-tunes the `google/flan-t5-small` sequence-to-sequence model using PyTorch and the Transformers library.
+- **Data Preprocessing**  
+  • Tokenization with T5 tokenizer  
+  • Train/validation split via `sklearn.model_selection.train_test_split`  
+  • Batching using PyTorch `DataLoader`
+- **Training Pipeline**  
+  • Optimizer: `torch.optim.AdamW`  
+  • GPU acceleration (Colab GPU recommended)  
+  • Configurable hyperparameters (batch size, epochs)
+- **Evaluation Metrics**  
+  Computes **ROUGE** and **BERTScore** to quantify summary quality.
+- **Interactive Notebook**  
+  Colab-enabled `Summa_rizzer.ipynb` walks through each step, from dataset loading to metric visualization :contentReference[oaicite:1]{index=1}.
+
+
+
