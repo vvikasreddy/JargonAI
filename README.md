@@ -5,7 +5,7 @@
 ## Features
 
 - **Custom Legal Dataset**  
-  Contains 60 human-written summaries of legal texts in `Corpus_all.csv` :contentReference[oaicite:0]{index=0}.
+  Contains 60 human-written summaries of legal texts in `Corpus_all.csv` 
 - **Pretrained Model**  
   Fine-tunes the `google/flan-t5-small` sequence-to-sequence model using PyTorch and the Transformers library.
 - **Data Preprocessing**  
