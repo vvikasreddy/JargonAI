@@ -19,7 +19,6 @@
 - **Evaluation Metrics**  
   Computes **ROUGE** and **BERTScore** to quantify summary quality.
 - **Interactive Notebook**  
-  Colab-enabled `Summa_rizzer.ipynb` walks through each step, from dataset loading to metric visualization :contentReference[oaicite:1]{index=1}.
-
+  Colab-enabled `Summa_rizzer.ipynb` walks through each step, from dataset loading to metric visualization
 
 
